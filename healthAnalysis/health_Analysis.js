@@ -6,7 +6,7 @@ const patients = [];
 
 function addPatient() {
     const name = document.getElementById("name").value;
-    const genter = document.querySelector('input[name="gender"]:checked');
+    const gender = document.querySelector('input[name="gender"]:checked');
     const age = document.getElementById("age").value;
     const condition = document.getElementById("condition").value;
 
@@ -43,6 +43,7 @@ function generateReport() {
             "High Blod Pressure": 0,
         },
     };
+
 
     for (const patient of patients) {
         conditionsCount[patient.condition]++;
